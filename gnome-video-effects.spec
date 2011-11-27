@@ -24,7 +24,9 @@ A collection of GStreamer effects to be used in different GNOME Modules.
 %setup -q
 
 %build
-%configure2_5x
+%configure2_5x \
+	--build=%{_build}
+
 %make
 
 %install
