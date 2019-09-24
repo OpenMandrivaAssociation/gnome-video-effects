@@ -2,13 +2,14 @@
 
 Summary:	Collection of GStreamer video effects
 Name:		gnome-video-effects
-Version:	0.4.3
-Release:	2
+Version:	0.5.0
+Release:	1
 Group:		System/Libraries
 License:	GPLv2
 Url:		http://live.gnome.org/GnomeVideoEffects
 Source0:	http://ftp.gnome.org/pub/GNOME/sources/gnome-video-effects/%{url_ver}/%{name}-%{version}.tar.xz
 Buildarch:	noarch
+BuildRequires:  meson
 BuildRequires:	intltool
 
 %description
@@ -26,11 +27,11 @@ A collection of GStreamer effects to be used in different GNOME Modules.
 %setup -q
 
 %build
-%configure2_5x
-%make
+%meson
+%meson_build
 
 %install
-%makeinstall_std
+%meson_install
 
 %files
 %doc README
