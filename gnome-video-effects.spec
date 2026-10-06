@@ -3,7 +3,7 @@
 Summary:	Collection of GStreamer video effects
 Name:		gnome-video-effects
 Version:	0.6.0
-Release:	8
+Release:	9
 Group:		System/Libraries
 License:	GPLv2
 Url:		https://live.gnome.org/GnomeVideoEffects
